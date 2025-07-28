@@ -113,16 +113,15 @@ header img
 .before-light
 {
 	width: 275px;
-    height: 70px;
+    height: 50px;
     display: flex;
     justify-content: center;
 }
 .inside
 {
-	width: 70px;
-    height: 70px;
-    background-color: goldenrod;
-	border-radius: 20px;
+	width: 25px;
+    height: 50px;
+    background-color: teal;
 }
 .u-shape
 {
@@ -140,7 +139,10 @@ header img
 {
 	background-color: var(--header-footer-color);
 }
-
+#design-div-dark-mode .before-light .inside
+{
+	background-color: var(--header-footer-color);
+}
 .social-media-icon
 {
 	width: 50px;
@@ -216,7 +218,6 @@ header img
 {
 	position: static !important;
 	margin-bottom: 15px;
-	cursor: pointer;
 	transition: transform 0.5s;
 	border: 2px solid var(--card-form-fields-border-color) !important;
 	background-color: var(--card-background-color) !important;

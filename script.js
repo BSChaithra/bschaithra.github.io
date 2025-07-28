@@ -27,6 +27,19 @@
 	
 	let svgLiveIcon = document.getElementById("svg-live-icon");
 	
+	let offcanvasMenu = document.getElementById("offcanvasMenu");
+	
+	let toggleMenu = document.getElementById("toggle-menu");
+	
+	function closeCanvas()
+	{
+		
+		offcanvasMenu.style.setProperty("display", "none");
+	}
+	toggleMenu.addEventListener("click", function(){
+		     
+			 offcanvasMenu.style.setProperty("display", "block");  
+	});
 	
 	function changeToDarkTheme()
 	{
