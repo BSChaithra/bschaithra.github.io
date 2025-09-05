@@ -33,9 +33,20 @@
 	
 	function closeCanvas()
 	{
+		document.body.style.removeProperty('overflow');
+		document.body.style.removeProperty('padding-right');
 		
-		offcanvasMenu.style.setProperty("display", "none");
+		const elementToRemoveClass = document.getElementById('offcanvasMenu');
+		elementToRemoveClass.classList.remove('show');
+		
+		const elementToRemove = document.querySelector('.offcanvas-backdrop');
+		     
+		if (elementToRemove && elementToRemove.parentNode) 
+		{
+			elementToRemove.parentNode.removeChild(elementToRemove);
+		}
 	}
+
 	toggleMenu.addEventListener("click", function(){
 		     
 			 offcanvasMenu.style.setProperty("display", "block");  
